@@ -15,7 +15,7 @@ namespace IDesign.Access.Customer.Interface
       Task<FilterResponse> FilterAsync(CustomerCriteria criteria);
 
       [OperationContract]
-      Task StoreAsync();
+      Task<StoreResponse> StoreAsync(Customer customer);
    }
 
    [DataContract]

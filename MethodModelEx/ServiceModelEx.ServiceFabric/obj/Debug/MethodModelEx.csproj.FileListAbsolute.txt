@@ -30,21 +30,21 @@ C:\Repos\Vertical Slice Workshop\DDC\MethodModelEx\ServiceModelEx.ServiceFabric\
 C:\Repos\Vertical Slice Workshop\DDC\MethodModelEx\ServiceModelEx.ServiceFabric\obj\Debug\MethodModelEx.csproj.CopyComplete
 C:\Repos\Vertical Slice Workshop\DDC\MethodModelEx\ServiceModelEx.ServiceFabric\obj\Debug\MethodModelEx.dll
 C:\Repos\Vertical Slice Workshop\DDC\MethodModelEx\ServiceModelEx.ServiceFabric\obj\Debug\MethodModelEx.pdb
-D:\Projects\Vertical-Slice-Workshop\MethodModelEx\ServiceModelEx.ServiceFabric\bin\Debug\MethodModelEx.dll
-D:\Projects\Vertical-Slice-Workshop\MethodModelEx\ServiceModelEx.ServiceFabric\bin\Debug\MethodModelEx.pdb
-D:\Projects\Vertical-Slice-Workshop\MethodModelEx\ServiceModelEx.ServiceFabric\bin\Debug\ServiceModelEx.dll
-D:\Projects\Vertical-Slice-Workshop\MethodModelEx\ServiceModelEx.ServiceFabric\bin\Debug\Moq.dll
-D:\Projects\Vertical-Slice-Workshop\MethodModelEx\ServiceModelEx.ServiceFabric\bin\Debug\System.Threading.Tasks.Extensions.dll
-D:\Projects\Vertical-Slice-Workshop\MethodModelEx\ServiceModelEx.ServiceFabric\bin\Debug\Castle.Core.dll
-D:\Projects\Vertical-Slice-Workshop\MethodModelEx\ServiceModelEx.ServiceFabric\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
-D:\Projects\Vertical-Slice-Workshop\MethodModelEx\ServiceModelEx.ServiceFabric\bin\Debug\ServiceModelEx.pdb
-D:\Projects\Vertical-Slice-Workshop\MethodModelEx\ServiceModelEx.ServiceFabric\bin\Debug\ServiceModelEx.dll.config
-D:\Projects\Vertical-Slice-Workshop\MethodModelEx\ServiceModelEx.ServiceFabric\bin\Debug\Moq.xml
-D:\Projects\Vertical-Slice-Workshop\MethodModelEx\ServiceModelEx.ServiceFabric\bin\Debug\System.Threading.Tasks.Extensions.xml
-D:\Projects\Vertical-Slice-Workshop\MethodModelEx\ServiceModelEx.ServiceFabric\bin\Debug\Castle.Core.xml
-D:\Projects\Vertical-Slice-Workshop\MethodModelEx\ServiceModelEx.ServiceFabric\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-D:\Projects\Vertical-Slice-Workshop\MethodModelEx\ServiceModelEx.ServiceFabric\obj\Debug\MethodModelEx.csprojAssemblyReference.cache
-D:\Projects\Vertical-Slice-Workshop\MethodModelEx\ServiceModelEx.ServiceFabric\obj\Debug\MethodModelEx.csproj.CoreCompileInputs.cache
-D:\Projects\Vertical-Slice-Workshop\MethodModelEx\ServiceModelEx.ServiceFabric\obj\Debug\MethodModelEx.csproj.CopyComplete
-D:\Projects\Vertical-Slice-Workshop\MethodModelEx\ServiceModelEx.ServiceFabric\obj\Debug\MethodModelEx.dll
-D:\Projects\Vertical-Slice-Workshop\MethodModelEx\ServiceModelEx.ServiceFabric\obj\Debug\MethodModelEx.pdb
+C:\Repos\Vertical Slice Workshop\DDC\Vertical Slice Workshop\MethodModelEx\ServiceModelEx.ServiceFabric\bin\Debug\MethodModelEx.dll
+C:\Repos\Vertical Slice Workshop\DDC\Vertical Slice Workshop\MethodModelEx\ServiceModelEx.ServiceFabric\bin\Debug\MethodModelEx.pdb
+C:\Repos\Vertical Slice Workshop\DDC\Vertical Slice Workshop\MethodModelEx\ServiceModelEx.ServiceFabric\bin\Debug\ServiceModelEx.dll
+C:\Repos\Vertical Slice Workshop\DDC\Vertical Slice Workshop\MethodModelEx\ServiceModelEx.ServiceFabric\bin\Debug\Moq.dll
+C:\Repos\Vertical Slice Workshop\DDC\Vertical Slice Workshop\MethodModelEx\ServiceModelEx.ServiceFabric\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Repos\Vertical Slice Workshop\DDC\Vertical Slice Workshop\MethodModelEx\ServiceModelEx.ServiceFabric\bin\Debug\Castle.Core.dll
+C:\Repos\Vertical Slice Workshop\DDC\Vertical Slice Workshop\MethodModelEx\ServiceModelEx.ServiceFabric\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Repos\Vertical Slice Workshop\DDC\Vertical Slice Workshop\MethodModelEx\ServiceModelEx.ServiceFabric\bin\Debug\ServiceModelEx.pdb
+C:\Repos\Vertical Slice Workshop\DDC\Vertical Slice Workshop\MethodModelEx\ServiceModelEx.ServiceFabric\bin\Debug\ServiceModelEx.dll.config
+C:\Repos\Vertical Slice Workshop\DDC\Vertical Slice Workshop\MethodModelEx\ServiceModelEx.ServiceFabric\bin\Debug\Moq.xml
+C:\Repos\Vertical Slice Workshop\DDC\Vertical Slice Workshop\MethodModelEx\ServiceModelEx.ServiceFabric\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Repos\Vertical Slice Workshop\DDC\Vertical Slice Workshop\MethodModelEx\ServiceModelEx.ServiceFabric\bin\Debug\Castle.Core.xml
+C:\Repos\Vertical Slice Workshop\DDC\Vertical Slice Workshop\MethodModelEx\ServiceModelEx.ServiceFabric\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Repos\Vertical Slice Workshop\DDC\Vertical Slice Workshop\MethodModelEx\ServiceModelEx.ServiceFabric\obj\Debug\MethodModelEx.csprojAssemblyReference.cache
+C:\Repos\Vertical Slice Workshop\DDC\Vertical Slice Workshop\MethodModelEx\ServiceModelEx.ServiceFabric\obj\Debug\MethodModelEx.csproj.CoreCompileInputs.cache
+C:\Repos\Vertical Slice Workshop\DDC\Vertical Slice Workshop\MethodModelEx\ServiceModelEx.ServiceFabric\obj\Debug\MethodModelEx.csproj.CopyComplete
+C:\Repos\Vertical Slice Workshop\DDC\Vertical Slice Workshop\MethodModelEx\ServiceModelEx.ServiceFabric\obj\Debug\MethodModelEx.dll
+C:\Repos\Vertical Slice Workshop\DDC\Vertical Slice Workshop\MethodModelEx\ServiceModelEx.ServiceFabric\obj\Debug\MethodModelEx.pdb
