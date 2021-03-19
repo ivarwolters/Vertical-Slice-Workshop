@@ -8,6 +8,7 @@ namespace IDesign.Access.Specials.Interface
    [ServiceContract]
    public interface ISpecialsAccess : IService
    {
+      //TODO: Take Customer Access as example.
       [OperationContract]
       Task FilterAsync();
       [OperationContract]

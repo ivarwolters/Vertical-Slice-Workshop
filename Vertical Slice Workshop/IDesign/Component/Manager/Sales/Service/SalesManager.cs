@@ -24,6 +24,11 @@ namespace IDesign.Manager.Sales.Service
       public SalesManager(StatelessServiceContext context) : base(context)
       { }
 
+      FindItemResponse MapInternalToPublic()
+      {
+         return new FindItemResponse();
+      }
+
       async Task<FindItemResponse> ISalesManager.FindItemAsync(FindItemRequest request)
       {
          var validationProxy = Proxy.ForComponent<IValidationEngine>(this);
@@ -38,7 +43,7 @@ namespace IDesign.Manager.Sales.Service
          var pricingProxy = Proxy.ForComponent<IPricingEngine>(this);
          await pricingProxy.CalculateAsync();
 
-         return new FindItemResponse();
+         return MapInternalToPublic();
       }
    }
 }
