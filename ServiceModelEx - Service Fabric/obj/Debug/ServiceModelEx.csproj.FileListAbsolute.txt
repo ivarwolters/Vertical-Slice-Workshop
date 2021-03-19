@@ -43,3 +43,26 @@ C:\Repos\Vertical Slice Workshop\DDC\Vertical Slice Workshop\ServiceModelEx - Se
 C:\Repos\Vertical Slice Workshop\DDC\Vertical Slice Workshop\ServiceModelEx - Service Fabric\obj\Debug\ServiceModelEx.csproj.CopyComplete
 C:\Repos\Vertical Slice Workshop\DDC\Vertical Slice Workshop\ServiceModelEx - Service Fabric\obj\Debug\ServiceModelEx.dll
 C:\Repos\Vertical Slice Workshop\DDC\Vertical Slice Workshop\ServiceModelEx - Service Fabric\obj\Debug\ServiceModelEx.pdb
+D:\Projects\Vertical-Slice-Workshop\ServiceModelEx - Service Fabric\bin\Debug\ServiceModelEx.dll.config
+D:\Projects\Vertical-Slice-Workshop\ServiceModelEx - Service Fabric\bin\Debug\ServiceModelEx.dll
+D:\Projects\Vertical-Slice-Workshop\ServiceModelEx - Service Fabric\bin\Debug\ServiceModelEx.pdb
+D:\Projects\Vertical-Slice-Workshop\ServiceModelEx - Service Fabric\bin\Debug\Castle.Core.dll
+D:\Projects\Vertical-Slice-Workshop\ServiceModelEx - Service Fabric\bin\Debug\Moq.dll
+D:\Projects\Vertical-Slice-Workshop\ServiceModelEx - Service Fabric\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Projects\Vertical-Slice-Workshop\ServiceModelEx - Service Fabric\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Projects\Vertical-Slice-Workshop\ServiceModelEx - Service Fabric\bin\Debug\Castle.Core.xml
+D:\Projects\Vertical-Slice-Workshop\ServiceModelEx - Service Fabric\bin\Debug\Moq.xml
+D:\Projects\Vertical-Slice-Workshop\ServiceModelEx - Service Fabric\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Projects\Vertical-Slice-Workshop\ServiceModelEx - Service Fabric\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Projects\Vertical-Slice-Workshop\ServiceModelEx - Service Fabric\obj\Debug\ServiceModelEx.csprojAssemblyReference.cache
+D:\Projects\Vertical-Slice-Workshop\ServiceModelEx - Service Fabric\obj\Debug\ServiceModelEx.SafeButton.resources
+D:\Projects\Vertical-Slice-Workshop\ServiceModelEx - Service Fabric\obj\Debug\ServiceModelEx.SafeListBox.resources
+D:\Projects\Vertical-Slice-Workshop\ServiceModelEx - Service Fabric\obj\Debug\ServiceModelEx.SafeProgressBar.resources
+D:\Projects\Vertical-Slice-Workshop\ServiceModelEx - Service Fabric\obj\Debug\ServiceModelEx.SafeStatusBar.resources
+D:\Projects\Vertical-Slice-Workshop\ServiceModelEx - Service Fabric\obj\Debug\ServiceModelEx.SafeTextBox.resources
+D:\Projects\Vertical-Slice-Workshop\ServiceModelEx - Service Fabric\obj\Debug\ServiceModelEx.SafeTrackBar.resources
+D:\Projects\Vertical-Slice-Workshop\ServiceModelEx - Service Fabric\obj\Debug\ServiceModelEx.csproj.GenerateResource.cache
+D:\Projects\Vertical-Slice-Workshop\ServiceModelEx - Service Fabric\obj\Debug\ServiceModelEx.csproj.CoreCompileInputs.cache
+D:\Projects\Vertical-Slice-Workshop\ServiceModelEx - Service Fabric\obj\Debug\ServiceModelEx.csproj.CopyComplete
+D:\Projects\Vertical-Slice-Workshop\ServiceModelEx - Service Fabric\obj\Debug\ServiceModelEx.dll
+D:\Projects\Vertical-Slice-Workshop\ServiceModelEx - Service Fabric\obj\Debug\ServiceModelEx.pdb

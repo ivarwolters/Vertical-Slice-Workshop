@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 using MethodModelEx.Microservices;
 using IDesign.Manager.Sales.Interface;
-
+using IDesign.Manager.Sales.Interface.Online;
 #if ServiceModelEx_ServiceFabric
 using ServiceModelEx.ServiceFabric.Extensions.Client;
 using ServiceModelEx.ServiceFabric.Extensions.Services;
