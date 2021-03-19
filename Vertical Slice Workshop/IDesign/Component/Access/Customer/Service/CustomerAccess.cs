@@ -8,6 +8,7 @@ using IDesign.Access.Customer.Interface;
 using System;
 using System.Collections.Generic;
 using IDesign.Framework.Repository;
+using System.Diagnostics;
 
 #if ServiceModelEx_ServiceFabric
 using ServiceModelEx.Fabric;
@@ -28,11 +29,19 @@ namespace IDesign.Access.Customer.Service
          Entity.ICustomerRepository customerRepository = RepositoryFactory.Create<Entity.ICustomerRepository>();
          IEnumerable<Entity.Customer> entityCustomer = customerRepository.Get<Entity.Customer>(criteria.NameCriteria);
          return MapEntityToDTO(entityCustomer);
+      }
+
+      private FilterResponse MapEntityToDTO(IEnumerable<Entity.Customer> entityCustomer)
+      {
+         // TODO: Map entity to public response object.
          return new FilterResponse();
       }
 
-      async Task ICustomerAccess.StoreAsync()
-      {}
+      async Task<StoreResponse> ICustomerAccess.StoreAsync(Interface.Customer customer)
+      {
+         //TODO: Implement with repository pattern just like FilterAsync.
+         return new StoreResponse();
+      }
    }
 }
 
