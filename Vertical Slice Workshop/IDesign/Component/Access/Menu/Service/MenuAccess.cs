@@ -20,9 +20,16 @@ namespace IDesign.Access.Menu.Service
       public MenuAccess(StatelessServiceContext context) : base(context)
       {}
 
-      async Task IMenuAccess.FilterAsync()
-      {}
-      async Task IMenuAccess.StoreAsync()
-      {}
+      async Task<FilterResponse> IMenuAccess.FilterAsync(FilterCriteria criteria)
+      {
+         // TODO: Implement with CustomerAccess as example.
+         return new Interface.FilterResponse();
+      }
+
+      async Task<StoreResponse> IMenuAccess.StoreAsync(Interface.Menu menu)
+      {
+         // TODO: Implement with CustomerAccess as example.
+         return new StoreResponse();
+      }
    }
 }

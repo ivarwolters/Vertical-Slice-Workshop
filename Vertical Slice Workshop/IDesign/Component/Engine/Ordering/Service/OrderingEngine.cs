@@ -28,7 +28,7 @@ namespace IDesign.Engine.Ordering.Service
          await customerProxy.FilterAsync(new CustomerCriteria());
 
          var menuProxy = Proxy.ForComponent<IMenuAccess>(this);
-         await menuProxy.FilterAsync();
+         await menuProxy.FilterAsync(new FilterCriteria());
 
          return new MatchResponse();
       }

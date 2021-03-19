@@ -9,8 +9,9 @@ namespace IDesign.Access.Menu.Interface
    public interface IMenuAccess : IService
    {
       [OperationContract]
-      Task FilterAsync();
+      Task<FilterResponse> FilterAsync(FilterCriteria criteria);
+
       [OperationContract]
-      Task StoreAsync();
+      Task<StoreResponse> StoreAsync(Menu menu);
    }
 }

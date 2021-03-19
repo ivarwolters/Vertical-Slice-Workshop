@@ -36,8 +36,11 @@
     <Reference Include="System.ServiceModel" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FilterCriteria.cs" />
+    <Compile Include="FilterResponse.cs" />
     <Compile Include="IMenuAccess.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StoreResponse.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\..\..\..\ServiceModelEx - Service Fabric\ServiceModelEx.csproj">
