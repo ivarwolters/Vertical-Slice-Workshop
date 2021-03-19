@@ -30,7 +30,7 @@ namespace IDesign.Manager.Sales.Service
          await validationProxy.ValidateAsync(new ValidateCriteria());
 
          var restaurantProxy = Proxy.ForComponent<IRestaurantAccess>(this);
-         await restaurantProxy.FilterAsync();
+         await restaurantProxy.FilterAsync(new RestaurantCriteria());
 
          var orderingEngine = Proxy.ForComponent<IOrderingEngine>(this);
          await orderingEngine.MatchAsync(new ItemCriteria());

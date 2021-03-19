@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using ServiceModelEx.ServiceFabric;
 
 using IDesign.iFX.Service;
@@ -14,16 +15,25 @@ using System.Fabric;
 
 namespace IDesign.Access.Restaurant.Service
 {
-   [ApplicationManifest("IDesign.Microservice.Sales","RestaurantAccess")]
-   public class RestaurantAccess : ServiceBase, IRestaurantAccess
-   {
-      public RestaurantAccess(StatelessServiceContext context) : base(context)
-      {}
+    [ApplicationManifest("IDesign.Microservice.Sales", "RestaurantAccess")]
+    public class RestaurantAccess : ServiceBase, IRestaurantAccess
+    {
+        public RestaurantAccess(StatelessServiceContext context) : base(context)
+        { }
 
-      async Task IRestaurantAccess.FilterAsync()
-      
-        {}
-      async Task IRestaurantAccess.StoreAsync()
-      {}
-   }
+
+        async Task<FilterRestaurantResponse> IRestaurantAccess.FilterAsync(RestaurantCriteria criteria)
+        {
+            await Task.Delay(50);
+            return new FilterRestaurantResponse
+            {
+                Restaurants = new List<Interface.Restaurant>()
+            };
+        }
+
+        Task<StoreRestaurantResponse> IRestaurantAccess.StoreAsync(Interface.Restaurant restaurant)
+        {
+            throw new System.NotImplementedException();
+        }
+    }
 }

@@ -7,6 +7,7 @@ using MethodModelEx.Microservices;
 using IDesign.Access.Customer.Interface;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using IDesign.Framework.Repository;
 
 #if ServiceModelEx_ServiceFabric
