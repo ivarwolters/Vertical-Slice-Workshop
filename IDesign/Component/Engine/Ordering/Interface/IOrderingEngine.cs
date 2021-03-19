@@ -9,6 +9,6 @@ namespace IDesign.Engine.Ordering.Interface
    public interface IOrderingEngine : IService
    {
       [OperationContract]
-      Task SubmitAsync();
+      Task<MatchResponse> MatchAsync(ItemCriteria critera);
    }
 }

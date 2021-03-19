@@ -23,19 +23,22 @@ namespace IDesign.Manager.Sales.Service
    {
       public SalesManager(StatelessServiceContext context) : base(context)
       { }
-      async Task ISalesManager.FindItemAsync()
+
+      async Task<FindItemResponse> ISalesManager.FindItemAsync(FindItemRequest request)
       {
          var validationProxy = Proxy.ForComponent<IValidationEngine>(this);
-         await validationProxy.ValidateAsync();
+         await validationProxy.ValidateAsync(new ValidateCriteria());
 
-         IRestaurantAccess restaurantProxy = Proxy.ForComponent<IRestaurantAccess>(this);
+         var restaurantProxy = Proxy.ForComponent<IRestaurantAccess>(this);
          await restaurantProxy.FilterAsync();
 
          var orderingEngine = Proxy.ForComponent<IOrderingEngine>(this);
-         await orderingEngine.SubmitAsync();
+         await orderingEngine.MatchAsync(new ItemCriteria());
 
          var pricingProxy = Proxy.ForComponent<IPricingEngine>(this);
          await pricingProxy.CalculateAsync();
+
+         return new FindItemResponse();
       }
    }
 }

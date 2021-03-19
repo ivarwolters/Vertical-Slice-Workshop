@@ -9,6 +9,6 @@ namespace IDesign.Manager.Sales.Interface
    public interface ISalesManager : IService
    {
       [OperationContract]
-      Task FindItemAsync();
+      Task<FindItemResponse> FindItemAsync(FindItemRequest request);
    }
 }

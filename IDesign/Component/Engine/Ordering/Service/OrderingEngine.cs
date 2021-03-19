@@ -22,13 +22,15 @@ namespace IDesign.Engine.Ordering.Service
       public OrderingEngine(StatelessServiceContext context) : base(context)
       {}
 
-      async Task IOrderingEngine.SubmitAsync()
+      async Task<MatchResponse> IOrderingEngine.MatchAsync(ItemCriteria critera)
       {
          var customerProxy = Proxy.ForComponent<ICustomerAccess>(this);
-         await customerProxy.FilterAsync();
+         await customerProxy.FilterAsync(new CustomerCriteria());
 
          var menuProxy = Proxy.ForComponent<IMenuAccess>(this);
          await menuProxy.FilterAsync();
+
+         return new MatchResponse();
       }
    }
 }

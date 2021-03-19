@@ -20,8 +20,11 @@ namespace IDesign.Access.Customer.Service
       public CustomerAccess(StatelessServiceContext context) : base(context)
       {}
 
-      async Task ICustomerAccess.FilterAsync()
-      {}
+      async Task<FilterResponse> ICustomerAccess.FilterAsync(CustomerCriteria criteria)
+      {
+         return new FilterResponse();
+      }
+
       async Task ICustomerAccess.StoreAsync()
       {}
    }

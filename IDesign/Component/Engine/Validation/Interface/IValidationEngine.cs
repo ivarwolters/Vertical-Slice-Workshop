@@ -9,6 +9,6 @@ namespace IDesign.Engine.Validation.Interface
    public interface IValidationEngine : IService
    {
       [OperationContract]
-      Task ValidateAsync();
+      Task<ValidateResponse> ValidateAsync(ValidateCriteria criteria);
    }
 }

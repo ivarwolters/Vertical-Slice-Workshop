@@ -68,7 +68,7 @@ namespace Test.Unit.Manager
          Action<ISalesManager> callerMock = (poco) =>
          {
             //TEST NOTE: Cannot use await in test menhods.
-            poco.FindItemAsync().Wait();
+            poco.FindItemAsync(new FindItemRequest()).Wait();
          };
 
          harness.TestServicePoco<ISalesManager>(callerMock,restaurantAccessMock,contextMock);
@@ -84,7 +84,7 @@ namespace Test.Unit.Manager
 
          Action<ISalesManager> callerMock = (proxy) =>
          {
-            proxy.FindItemAsync().Wait();
+            proxy.FindItemAsync(new FindItemRequest()).Wait();
          };
 
          harness.TestService<ISalesManager>(callerMock,restaurantAccessMock,contextMock);
@@ -97,7 +97,7 @@ namespace Test.Unit.Manager
 
          Action<ISalesManager> callerMock = (poco) =>
          {
-            poco.FindItemAsync().Wait();
+            poco.FindItemAsync(new FindItemRequest()).Wait();
          };
 
          harness.TestServicePoco<ISalesManager>(callerMock,contextMock);
@@ -110,7 +110,7 @@ namespace Test.Unit.Manager
 
          Action<ISalesManager> callerMock = (proxy) =>
          {
-            proxy.FindItemAsync().Wait();
+            proxy.FindItemAsync(new FindItemRequest()).Wait();
          };
 
          harness.TestService<ISalesManager>(callerMock,contextMock);

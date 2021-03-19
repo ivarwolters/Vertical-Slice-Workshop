@@ -25,7 +25,7 @@ namespace Test.Client.Sales
       {
          //Put your test call here...
          ISalesManager manager = Proxy.ForMicroservice<ISalesManager>();
-         await manager.FindItemAsync();
+         await manager.FindItemAsync(new FindItemRequest());
       }
       public async Task Test()
       {

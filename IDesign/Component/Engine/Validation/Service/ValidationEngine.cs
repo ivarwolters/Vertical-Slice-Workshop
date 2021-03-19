@@ -20,8 +20,9 @@ namespace IDesign.Engine.Validation.Service
       public ValidationEngine(StatelessServiceContext context) : base(context)
       {}
 
-      async Task IValidationEngine.ValidateAsync()
+      async Task<ValidateResponse> IValidationEngine.ValidateAsync(ValidateCriteria criteria)
       {
+         return new ValidateResponse();
       }
    }
 }
