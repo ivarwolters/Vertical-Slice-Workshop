@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DEF9BFB1-C077-41A1-8EB6-49E393E8C387}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IDesign.Manager.Sales.Service</RootNamespace>
+    <AssemblyName>IDesign.Manager.Sales.Service</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;ServiceModelEx_ServiceFabric</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Hosting.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SalesManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\..\MethodModelEx\ServiceModelEx.ServiceFabric\MethodModelEx.csproj">
+      <Project>{4d61b06c-a8d2-4c36-a8b7-eb310d5355b1}</Project>
+      <Name>MethodModelEx</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\ServiceModelEx - Service Fabric\ServiceModelEx.csproj">
+      <Project>{0858C710-AF53-4049-B98E-CFE3638D1228}</Project>
+      <Name>ServiceModelEx</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Access\Restaurant\Interface\IDesign.Access.Restaurant.Interface.csproj">
+      <Project>{5124081b-76cd-4cb5-9ea7-ef9aab4ab510}</Project>
+      <Name>IDesign.Access.Restaurant.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\iFX\Service\IDesign.iFX.Service.csproj">
+      <Project>{2466cf16-4e89-4c69-9cab-1585692acf11}</Project>
+      <Name>IDesign.iFX.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Engine\Ordering\Interface\IDesign.Engine.Ordering.Interface.csproj">
+      <Project>{4261961b-4d75-4f8e-8736-e4a3d7f37342}</Project>
+      <Name>IDesign.Engine.Ordering.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Engine\Pricing\Interface\IDesign.Engine.Pricing.Interface.csproj">
+      <Project>{8a468e53-c6fa-4ace-a84e-e962b824d4f3}</Project>
+      <Name>IDesign.Engine.Pricing.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Engine\Validation\Interface\IDesign.Engine.Validation.Interface.csproj">
+      <Project>{1d3523c5-2271-4abe-8f1d-b7914a777345}</Project>
+      <Name>IDesign.Engine.Validation.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Interface\IDesign.Manager.Sales.Interface.csproj">
+      <Project>{78df61e2-a113-4290-ba36-53347f9ea7da}</Project>
+      <Name>IDesign.Manager.Sales.Interface</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6E1999DC-1AFA-4EAD-9BA6-CA186564FB33}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Test.Unit.Manager</RootNamespace>
+    <AssemblyName>Test.Unit.Manager</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
+    <IsCodedUITest>False</IsCodedUITest>
+    <TestProjectType>UnitTest</TestProjectType>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Castle.Core.4.4.0\lib\net45\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Moq, Version=4.12.0.0, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Moq.4.12.0\lib\net45\Moq.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\System.Runtime.CompilerServices.Unsafe.4.5.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\System.Threading.Tasks.Extensions.4.5.1\lib\netstandard2.0\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Choose>
+    <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+      </ItemGroup>
+    </When>
+    <Otherwise>
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+      </ItemGroup>
+    </Otherwise>
+  </Choose>
+  <ItemGroup>
+    <Compile Include="SalesManagerTests.cs" />
+    <Compile Include="UnitTestHarness.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\ServiceModelEx - Service Fabric\ServiceModelEx.csproj">
+      <Project>{0858c710-af53-4049-b98e-cfe3638d1228}</Project>
+      <Name>ServiceModelEx</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\IDesign\Component\Access\Customer\Service\IDesign.Access.Customer.Service.csproj">
+      <Project>{6fa6b62c-6b32-47bf-9cd0-5b592c9e9f5f}</Project>
+      <Name>IDesign.Access.Customer.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\IDesign\Component\Access\Menu\Service\IDesign.Access.Menu.Service.csproj">
+      <Project>{8e23ec50-70bb-4a33-9c22-89b5baab5070}</Project>
+      <Name>IDesign.Access.Menu.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\IDesign\Component\Access\Restaurant\Interface\IDesign.Access.Restaurant.Interface.csproj">
+      <Project>{5124081b-76cd-4cb5-9ea7-ef9aab4ab510}</Project>
+      <Name>IDesign.Access.Restaurant.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\IDesign\Component\Access\Restaurant\Service\IDesign.Access.Restaurant.Service.csproj">
+      <Project>{d4173885-dd25-44b5-9168-18f89c72260c}</Project>
+      <Name>IDesign.Access.Restaurant.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\IDesign\Component\Access\Specials\Service\IDesign.Access.Specials.Service.csproj">
+      <Project>{01dc2f2a-c4f4-4405-8fa9-19461ce6c74f}</Project>
+      <Name>IDesign.Access.Specials.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\IDesign\Component\Engine\Ordering\Interface\IDesign.Engine.Ordering.Interface.csproj">
+      <Project>{4261961b-4d75-4f8e-8736-e4a3d7f37342}</Project>
+      <Name>IDesign.Engine.Ordering.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\IDesign\Component\Engine\Ordering\Service\IDesign.Engine.Ordering.Service.csproj">
+      <Project>{2336633e-31b4-4246-bfac-7e5e5094ecae}</Project>
+      <Name>IDesign.Engine.Ordering.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\IDesign\Component\Engine\Pricing\Interface\IDesign.Engine.Pricing.Interface.csproj">
+      <Project>{8a468e53-c6fa-4ace-a84e-e962b824d4f3}</Project>
+      <Name>IDesign.Engine.Pricing.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\IDesign\Component\Engine\Pricing\Service\IDesign.Engine.Pricing.Service.csproj">
+      <Project>{2c64483c-f499-4cd8-98f5-081079090afe}</Project>
+      <Name>IDesign.Engine.Pricing.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\IDesign\Component\Engine\Validation\Interface\IDesign.Engine.Validation.Interface.csproj">
+      <Project>{1d3523c5-2271-4abe-8f1d-b7914a777345}</Project>
+      <Name>IDesign.Engine.Validation.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\IDesign\Component\Engine\Validation\Service\IDesign.Engine.Validation.Service.csproj">
+      <Project>{391b92c8-bb22-4666-be73-8fe435bc6242}</Project>
+      <Name>IDesign.Engine.Validation.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\IDesign\Component\Manager\Sales\Interface\IDesign.Manager.Sales.Interface.csproj">
+      <Project>{78df61e2-a113-4290-ba36-53347f9ea7da}</Project>
+      <Name>IDesign.Manager.Sales.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\IDesign\Component\Manager\Sales\Service\IDesign.Manager.Sales.Service.csproj">
+      <Project>{def9bfb1-c077-41a1-8eb6-49e393e8c387}</Project>
+      <Name>IDesign.Manager.Sales.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\IDesign\iFX\Service\IDesign.iFX.Service.csproj">
+      <Project>{2466CF16-4E89-4C69-9CAB-1585692ACF11}</Project>
+      <Name>IDesign.iFX.Service</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Choose>
+    <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Extension, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITesting, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+      </ItemGroup>
+    </When>
+  </Choose>
+  <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
